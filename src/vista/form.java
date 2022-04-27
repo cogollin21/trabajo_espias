@@ -1,11 +1,10 @@
-package tp2;
+package vista;
 
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
-import javax.swing.JCheckBox;
 
-public class frente {
+public class form {
 
 	private JFrame frame;
 
@@ -16,7 +15,7 @@ public class frente {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					frente window = new frente();
+					form window = new form();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -28,7 +27,7 @@ public class frente {
 	/**
 	 * Create the application.
 	 */
-	public frente() {
+	public form() {
 		initialize();
 	}
 
@@ -39,6 +38,6 @@ public class frente {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.getContentPane().setLayout(null);
 	}
+
 }
